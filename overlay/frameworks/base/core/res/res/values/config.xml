@@ -497,4 +497,10 @@
         <item>eye5:eye protection mode 5</item>
         <item>eye6:eye protection mode 6</item>
     </string-array>
+
+    <!--  Maximum number of supported users -->
+    <integer name="config_multiuserMaximumUsers">4</integer>
+    
+    <!--  Whether Multiuser UI should be shown -->
+    <bool name="config_enableMultiUserUI">true</bool>
 </resources>
