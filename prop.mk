@@ -83,20 +83,14 @@ debug.enable.sglscale=1 \
 debug.gralloc.enable_fb_ubwc=1 \
 debug.mdpcomp.logs=0 \
 debug.sf.hw=0 \
-debug.sf.disable_hwc_vds=1 \
-debug.sf.disable_hwc=0 \
+debug.sf.enable_hwc_vds=1 \
 debug.sf.recomputecrop=0 \
-debug.sf.gpu_comp_tiling=1 \
-debug.performance.tuning=1 \
-debug.sdm.support_writeback=0 \
-debug.hwui.use_buffer_age=false \
 dev.pm.dyn_samplingrate=1 \
 persist.debug.wfd.enable=1 \
-persist.sys.wfd.virtual=0 \
 persist.demo.hdmirotationlock=false \
 persist.hwc.enable_vds=1 \
 persist.hwc.mdpcomp.enable=true \
-persist.hwc.ptor.enable=true \
+persist.sys.wfd.virtual=0 \
 ro.opengles.version=196610 \
 ro.qualcomm.cabl=0 \
 ro.sf.lcd_density=420 \
@@ -106,8 +100,7 @@ sdm.debug.disable_rotator_split=1 \
 sdm.perf_hint_window=50 \
 vendor.gralloc.enable_fb_ubwc=1 \
 vendor.display.disable_skip_validate=1 \
-vendor.display.disable_rotator_downscale=1 \
-video.accelerate.hw=1
+vendor.display.enable_default_color_mode=1
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -142,7 +135,8 @@ vendor.vidc.dec.downscalar_height=1088 \
 vendor.vidc.dec.downscalar_width=1920 \
 vendor.vidc.disable.split.mode=1 \
 vendor.vidc.enc.disable.pq=true \
-vendor.vidc.enc.disable_bframes=1
+vendor.vidc.enc.disable_bframes=1 \
+vendor.video.disable.ubwc=1
 
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -193,7 +187,7 @@ rild.libargs=-d/dev/smd0 \
 rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
 vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
 ro.telephony.call_ring.multiple=false \
-ro.telephony.default_network=22,22 \
+ro.telephony.default_network=22,20 \
 service.qti.ims.enabled=1 \
 telephony.lteOnCdmaDevice=1
 
