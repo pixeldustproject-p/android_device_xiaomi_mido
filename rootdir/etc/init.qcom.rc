@@ -181,9 +181,39 @@ on boot
 
     # Flash LED
     chmod 0660 /sys/devices/soc/qpnp-flash-led-25/leds/led:flash_1/max_brightness
-    chown system system /sys/devices/soc/qpnp-flash-led-25/leds/led:flash_1/max_brightness
+    chmod 0660 /sys/devices/soc/qpnp-flash-led-25/leds/led:flash_0/max_brightness
     chmod 0660 /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness
+    chmod 0660 /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_0/max_brightness
+    chown system system /sys/devices/soc/qpnp-flash-led-25/leds/led:flash_1/max_brightness
+    chown system system /sys/devices/soc/qpnp-flash-led-25/leds/led:flash_0/max_brightness
     chown system system /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness
+    chown system system /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_0/max_brightness
+
+    # DT2W
+    chmod 0660 /sys/devices/soc/78b7000.i2c/i2c-3/3-0038/enable_dt2w
+    chown system system /sys/devices/soc/78b7000.i2c/i2c-3/3-0038/enable_dt2w
+
+    # Button LED
+    chmod 0660 /sys/class/leds/button-backlight/max_brightness
+    chown system system /sys/class/leds/button-backlight/max_brightness
+
+    # Vibrator permissions
+    chown system system /sys/devices/virtual/timed_output/vibrator/vtg_level
+    chmod 0660 /sys/devices/virtual/timed_output/vibrator/vtg_level
+
+    # Kcal permissions
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal
+    chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_min
+    chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_min
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_sat
+    chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_sat
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_hue
+    chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_hue
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_val
+    chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_val
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_cont
+    chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_cont
 
 # msm specific files that need to be created on /data
 on post-fs-data

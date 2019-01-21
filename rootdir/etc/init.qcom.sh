@@ -408,5 +408,4 @@ case "$buildvariant" in
         ;;
 esac
 
-echo '0' > /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness
-echo '0' > /sys/devices/soc/qpnp-flash-led-25/leds/led:flash_1/max_brightness
+
