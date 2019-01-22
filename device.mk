@@ -379,9 +379,9 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
 
-# XiaomiParts
+# CustomDoze
 PRODUCT_PACKAGES += \
-    XiaomiParts
+    CustomDoze
 
 # AdvancedControls
 PRODUCT_PACKAGES += \
