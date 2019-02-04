@@ -392,7 +392,6 @@ vendor/lib64/libwms.so
 # Perf - from Tissot PKQ1.180917.001/V10.0.2.0.PDHMIFK
 lib/vendor.qti.hardware.perf@1.0.so
 lib64/vendor.qti.hardware.perf@1.0.so
-vendor/bin/energy-awareness
 vendor/bin/hw/vendor.qti.hardware.perf@1.0-service
 vendor/bin/msm_irqbalance
 vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc
